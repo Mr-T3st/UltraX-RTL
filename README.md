@@ -3,7 +3,7 @@
 
   <h1>UltraX-RTL</h1>
 
-  <p><strong>Professional right-to-left rendering for Persian web content and AI conversations.</strong></p>
+  <p><strong>Professional right-to-left rendering for RTL web content and AI conversations.</strong></p>
 
   <p>
     <a href="https://github.com/Mr-T3st/UltraX-RTL/releases/latest"><strong>Download latest release</strong></a>
@@ -19,7 +19,7 @@
 
 ---
 
-UltraX-RTL is a cross-browser extension built for Persian text, browser-translated pages, and modern AI chat interfaces. It applies RTL only where it is useful, keeps technical content readable, preserves page structure, and lets the user restore the original layout at any time.
+UltraX-RTL is a cross-browser extension built for text are written with right-to-left , browser-translated pages, and modern AI chat interfaces. It applies RTL only where it is useful, keeps technical content readable, preserves page structure, and lets the user restore the original layout at any time.
 
 The extension runs locally in the browser. It does not use analytics, tracking, remote scripts, or a server for processing page content.
 
@@ -33,8 +33,8 @@ UltraX-RTL treats these parts independently. Persian prose can become RTL while 
 
 ### Smart Persian direction
 
-- Detects Persian and other RTL-dominant text at element level.
-- Handles mixed Persian and English paragraphs more naturally.
+- Detects RTL-dominant text at element level.
+- Handles mixed Unicode text and English paragraphs more naturally.
 - Supports sentences that begin with an English product name or technical phrase.
 - Processes content added later by single-page applications and streaming AI responses.
 - Restores extension-owned changes through Reset.
@@ -219,5 +219,5 @@ Some browser-protected pages do not permit extension injection. Cross-origin ifr
 
 <div align="center">
   <strong>UltraX-RTL</strong><br>
-  Clear Persian text. Protected technical content. Original layout when it matters.
+  Clear text are written with right-to-left. Protected technical content. Original layout when it matters.
 </div>
