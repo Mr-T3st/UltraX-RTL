@@ -10,6 +10,14 @@
   </p>
 
   <p>
+    <a href="#downloads"><strong>Download packages</strong></a>
+    &nbsp;&bull;&nbsp;
+    <a href="#store-availability"><strong>Download from browser stores</strong></a>
+    &nbsp;&bull;&nbsp;
+    <a href="#installation"><strong>Installation guide</strong></a>
+  </p>
+
+  <p>
     <img alt="Version 2.8.0" src="https://img.shields.io/badge/version-2.8.0-5B7CFA?style=flat-square">
     <img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-7B61FF?style=flat-square">
     <img alt="Chrome, Edge and Firefox" src="https://img.shields.io/badge/browsers-Chrome%20%7C%20Edge%20%7C%20Firefox-20BFA9?style=flat-square">
