@@ -37,7 +37,7 @@ These examples show the extension interface, Persian text correction, protected 
 
 <details>
   <summary>
-    <img src="assets/demo/extension-interface.png" height="75" alt="UltraX-RTL extension interface thumbnail">
+    <img src="assets/fchr/extension-interface+features.png" height="75" alt="UltraX-RTL extension interface thumbnail">
     <img src="assets/demo/persian-rtl-comparison.png" height="75" alt="Persian RTL comparison thumbnail">
     <img src="assets/demo/code-protection.png" height="75" alt="LTR code protection thumbnail">
     <img src="assets/demo/browser-translation-rtl.png" height="75" alt="Browser-translated content with automatic RTL thumbnail">
@@ -47,23 +47,8 @@ These examples show the extension interface, Persian text correction, protected 
 
   <p align="center"><strong>Extension controls and local configuration</strong></p>
   <p align="center">
-    <img src="assets/demo/extension-interface.png" width="900" alt="UltraX-RTL extension interface and settings">
-  </p>
+    <img src="assets/fchr/extension-interface+features.png" width="900" alt="UltraX-RTL extension interface and settings">
 
-  <p align="center"><strong>Element-level Persian RTL correction</strong></p>
-  <p align="center">
-    <img src="assets/demo/persian-rtl-comparison.png" width="900" alt="Comparison of Persian text before and after RTL correction">
-  </p>
-
-  <p align="center"><strong>LTR code protection inside Persian content</strong></p>
-  <p align="center">
-    <img src="assets/demo/code-protection.png" width="820" alt="Code remains left-to-right while surrounding Persian prose becomes right-to-left">
-  </p>
-
-  <p align="center"><strong>Automatic RTL for browser-translated content</strong></p>
-  <p align="center">
-    <img src="assets/demo/browser-translation-rtl.png" width="900" alt="Browser-translated Persian content before and after automatic RTL processing">
-  </p>
 </details>
 
 ## Key features
