@@ -19,7 +19,7 @@
 
 ---
 
-UltraX-RTL is a cross-browser extension built for text are written with right-to-left , browser-translated pages, and modern AI chat interfaces. It applies RTL only where it is useful, keeps technical content readable, preserves page structure, and lets the user restore the original layout at any time.
+UltraX-RTL is a cross-browser extension built for content written in right-to-left languages, browser-translated pages, and modern AI chat interfaces. It applies RTL only where it is useful, keeps technical content readable, preserves page structure, and lets the user restore the original layout at any time.
 
 The extension runs locally in the browser. It does not use analytics, tracking, remote scripts, or a server for processing page content.
 
@@ -28,6 +28,43 @@ The extension runs locally in the browser. It does not use analytics, tracking, 
 Changing the direction of an entire page is easy. Doing it without breaking code blocks, formulas, sidebars, editors, mixed-language sentences, and dynamic chat responses is not.
 
 UltraX-RTL treats these parts independently. Persian prose can become RTL while code, mathematics, URLs, technical labels, and interface controls retain the direction they need.
+
+UltraX-RTL is not tied to a specific website, AI service, or front-end framework. Its DOM-based engine adapts to standard page structures, dynamic single-page applications, and accessible web components, allowing reliable RTL processing across a broad range of websites without site-specific integration.
+
+## Demo
+
+These examples show the extension interface, Persian text correction, protected LTR code, and RTL handling for browser-translated content. Select the thumbnail strip to expand or collapse the full-size gallery on this page.
+
+<details>
+  <summary>
+    <img src="assets/demo/extension-interface.png" height="75" alt="UltraX-RTL extension interface thumbnail">
+    <img src="assets/demo/persian-rtl-comparison.png" height="75" alt="Persian RTL comparison thumbnail">
+    <img src="assets/demo/code-protection.png" height="75" alt="LTR code protection thumbnail">
+    <img src="assets/demo/browser-translation-rtl.png" height="75" alt="Browser-translated content with automatic RTL thumbnail">
+  </summary>
+
+  <br>
+
+  <p align="center"><strong>Extension controls and local configuration</strong></p>
+  <p align="center">
+    <img src="assets/demo/extension-interface.png" width="900" alt="UltraX-RTL extension interface and settings">
+  </p>
+
+  <p align="center"><strong>Element-level Persian RTL correction</strong></p>
+  <p align="center">
+    <img src="assets/demo/persian-rtl-comparison.png" width="900" alt="Comparison of Persian text before and after RTL correction">
+  </p>
+
+  <p align="center"><strong>LTR code protection inside Persian content</strong></p>
+  <p align="center">
+    <img src="assets/demo/code-protection.png" width="820" alt="Code remains left-to-right while surrounding Persian prose becomes right-to-left">
+  </p>
+
+  <p align="center"><strong>Automatic RTL for browser-translated content</strong></p>
+  <p align="center">
+    <img src="assets/demo/browser-translation-rtl.png" width="900" alt="Browser-translated Persian content before and after automatic RTL processing">
+  </p>
+</details>
 
 ## Key features
 
@@ -204,11 +241,11 @@ When a page still renders incorrectly:
 
 The popup intentionally avoids displaying the complete raw scan. Detailed evidence remains available through local export.
 
-## Compatibility and limitations
+## Compatibility
 
-UltraX-RTL targets current versions of Chrome, Edge, and Firefox using Manifest V3.
+UltraX-RTL targets current versions of Chrome, Edge, and Firefox using Manifest V3 and is designed for broad compatibility across conventional websites, browser-translated pages, and modern web applications.
 
-Some browser-protected pages do not permit extension injection. Cross-origin iframes and closed Shadow DOM can also restrict how deeply any extension can change typography or direction. A website may change its internal structure at any time; the Scanner report is the preferred way to document those cases.
+Like every browser extension, it operates within the browser's security model. Browser-protected pages, cross-origin frames, and closed Shadow DOM may prevent extensions from accessing isolated content; these are platform restrictions rather than dependencies on particular websites or frameworks. The Scanner report helps document exceptional rendering cases.
 
 ## Project links
 
@@ -219,5 +256,5 @@ Some browser-protected pages do not permit extension injection. Cross-origin ifr
 
 <div align="center">
   <strong>UltraX-RTL</strong><br>
-  Clear text are written with right-to-left. Protected technical content. Original layout when it matters.
+  Clear right-to-left text. Protected technical content. Original layout when it matters.
 </div>
