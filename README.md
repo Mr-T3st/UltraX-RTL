@@ -31,7 +31,7 @@ UltraX-RTL treats these parts independently. Persian prose can become RTL while 
 
 UltraX-RTL is not tied to a specific website, AI service, or front-end framework. Its DOM-based engine adapts to standard page structures, dynamic single-page applications, and accessible web components, allowing reliable RTL processing across a broad range of websites without site-specific integration.
 
-## Ui / features
+## Ui / Features
 
 These examples show the extension interface, Persian text correction, protected LTR code, and RTL handling for browser-translated content. Select the thumbnail strip to expand or collapse the full-size gallery on this page.
 
