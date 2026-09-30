@@ -68,7 +68,7 @@ These examples show the extension interface, Persian text correction, protected 
 
 ## Key features
 
-### Smart Persian direction
+### Smart Right To Left direction
 
 - Detects RTL-dominant text at element level.
 - Handles mixed Unicode text and English paragraphs more naturally.
@@ -76,7 +76,7 @@ These examples show the extension interface, Persian text correction, protected 
 - Processes content added later by single-page applications and streaming AI responses.
 - Restores extension-owned changes through Reset.
 
-### AI sidebar preservation
+### AI sidebar preservation (It does not work on all websites)
 
 - Keeps a detected sidebar on its original physical side while the conversation becomes RTL.
 - Uses semantic, structural, and geometry-based detection instead of relying only on class names.
@@ -92,10 +92,10 @@ These examples show the extension interface, Persian text correction, protected 
 - Keeps MathML, MathJax, and KaTeX content isolated from page-level RTL changes.
 - Distinguishes prose written inside a Markdown fence from an actual programming-language block when enough evidence is available.
 
-### Persian typography
+### Typography
 
 - Includes Vazirmatn as the default Persian font.
-- Can force the selected font onto Persian text that was added by browser translation or a JavaScript framework.
+- Can force the selected font onto RTL language text that was added by browser translation or a JavaScript framework.
 - Provides system-font alternatives when compatible fonts are installed.
 - Accepts one private local WOFF2, WOFF, TTF, or OTF font.
 - Stores an uploaded font locally and never sends it to a remote service.
@@ -230,7 +230,7 @@ The default configuration is intended to be safe for ordinary Persian content. C
 
 ## Scanner reports
 
-When a page still renders incorrectly:
+If a page still renders incorrectly, and you want us to fix it, you can send us the details.:
 
 1. Open the UltraX-RTL menu.
 2. Enable **Developer**.
