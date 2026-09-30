@@ -38,9 +38,6 @@ These examples show the extension interface, Persian text correction, protected 
 <details>
   <summary>
     <img src="assets/fchr/extension-interface+features.png" height="75" alt="UltraX-RTL extension interface thumbnail">
-    <img src="assets/demo/persian-rtl-comparison.png" height="75" alt="Persian RTL comparison thumbnail">
-    <img src="assets/demo/code-protection.png" height="75" alt="LTR code protection thumbnail">
-    <img src="assets/demo/browser-translation-rtl.png" height="75" alt="Browser-translated content with automatic RTL thumbnail">
   </summary>
 
   <br>
