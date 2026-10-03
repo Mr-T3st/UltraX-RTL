@@ -189,10 +189,10 @@ Firefox removes temporary add-ons when the browser closes. Permanent installatio
 | Store | Status | Link |
 |---|---|---|
 | Chrome Web Store | Preparing for publication | — |
-| Microsoft Edge Add-ons | Preparing for publication | |
-| Mozilla Add-ons | Preparing for publication | |
+| Microsoft Edge Add-ons | Preparing for publication | — |
+| Mozilla Add-ons | Available | [Install from Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/ultrax-rtl-advanced-toolkit/) |
 
-The Edge and Mozilla link fields are intentionally left blank until their public listings are available.
+The Mozilla Add-ons release is now available. Chrome and Edge store listings are being prepared.
 
 ## Basic usage
 
