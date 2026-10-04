@@ -10,12 +10,12 @@
   </p>
 
   <p>
-    <a href="#downloads"><strong>Download packages</strong></a>
-    &nbsp;&bull;&nbsp;
-    <a href="#store-availability"><strong>Download from browser stores</strong></a>
-    &nbsp;&bull;&nbsp;
-    <a href="#installation"><strong>Installation guide</strong></a>
-  </p>
+  <a href="#store-availability"><strong>Download from browser stores</strong></a>
+  &nbsp;&bull;&nbsp;
+  <a href="#installation"><strong>Installation guide</strong></a>
+  &nbsp;&bull;&nbsp;
+  <a href="installation-fa.md"><strong>راهنمای نصب فارسی</strong></a>
+</p>
 
   <p>
     <img alt="Version 2.8.0" src="https://img.shields.io/badge/version-2.8.0-5B7CFA?style=flat-square">
