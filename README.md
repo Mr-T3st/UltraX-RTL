@@ -18,7 +18,7 @@
 </p>
 
   <p>
-    <img alt="Version 2.8.0" src="https://img.shields.io/badge/version-2.8.0-5B7CFA?style=flat-square">
+    <img alt="Version 2.8.1" src="https://img.shields.io/badge/version-2.8.1-5B7CFA?style=flat-square">
     <img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-7B61FF?style=flat-square">
     <img alt="Chrome, Edge and Firefox" src="https://img.shields.io/badge/browsers-Chrome%20%7C%20Edge%20%7C%20Firefox-20BFA9?style=flat-square">
     <img alt="Local processing" src="https://img.shields.io/badge/privacy-local--only-2EBD85?style=flat-square">
@@ -103,7 +103,8 @@ These examples show the extension interface, Persian text correction, protected 
 - Can mirror likely Next, Previous, Arrow, and Chevron icons without rewriting SVG content.
 - Provides Always, Manual, and Never behavior per hostname.
 - Keeps domain rules local to the browser.
-- Does not request permanent access to every website.
+- Requests optional access only for the selected origin when **Always** is enabled, allowing that rule to survive browser restarts.
+- Removes the optional origin access when the rule is cleared or changed to **Never**.
 
 ### Developer Scanner
 
@@ -117,6 +118,7 @@ These examples show the extension interface, Persian text correction, protected 
 
 - Supports light and dark appearance modes.
 - Includes Aurora, Ocean, Rose, and Graphite palettes.
+- Starts with the Light theme and Aurora palette while preserving any existing user choice.
 - Uses readable Persian and English font stacks.
 - Keeps important controls accessible from a compact hamburger menu.
 
@@ -130,12 +132,12 @@ UltraX-RTL is designed around temporary, user-authorized access.
 | Analytics | Not used |
 | Tracking | Not used |
 | Remote executable code | Not used |
-| Permanent host access | Not requested |
+| Host access | No broad default access; optional exact-origin access only for an **Always** rule |
 | Custom font | Stored locally in the browser |
 | Scanner report | Created locally and downloaded only on request |
 | Synced preferences | Limited to small user settings supported by browser sync |
 
-The extension uses `activeTab`, `scripting`, and `storage`. These permissions provide temporary page access after a user action, load the local RTL engine, and retain user preferences.
+The extension uses `activeTab`, `scripting`, and `storage`. These permissions provide temporary page access after a user action, load the local RTL engine, and retain user preferences. Selecting **Always** triggers the browser's own permission prompt for that origin so the rule can be reapplied after restart.
 
 See [PRIVACY_POLICY.md](PRIVACY_POLICY.md) for the full policy used by the browser-store listings.
 
@@ -145,16 +147,16 @@ Open the [latest GitHub Release](https://github.com/Mr-T3st/UltraX-RTL/releases/
 
 | Browser | Release asset | Intended use |
 |---|---|---|
-| Google Chrome | `ultrax-rtl-chrome-v2.8.0.zip` | Local unpacked installation or Chrome Web Store submission |
-| Microsoft Edge | `ultrax-rtl-edge-v2.8.0.zip` | Local unpacked installation or Edge Add-ons submission |
-| Mozilla Firefox | `ultrax-rtl-firefox-v2.8.0.zip` | Temporary testing or Mozilla Add-ons submission |
+| Google Chrome | `ultrax-rtl-chrome-v2.8.1.zip` | Local unpacked installation or Chrome Web Store submission |
+| Microsoft Edge | `ultrax-rtl-edge-v2.8.1.zip` | Local unpacked installation or Edge Add-ons submission |
+| Mozilla Firefox | `ultrax-rtl-firefox-v2.8.1.zip` | Temporary testing or Mozilla Add-ons submission |
 | All packages | `SHA256SUMS.txt` | Download-integrity verification |
 
 ## Installation
 
 ### Google Chrome
 
-1. Download `ultrax-rtl-chrome-v2.8.0.zip` from Releases.
+1. Download `ultrax-rtl-chrome-v2.8.1.zip` from Releases.
 2. Extract it to a permanent folder.
 3. Open `chrome://extensions`.
 4. Enable **Developer mode**.
@@ -166,7 +168,7 @@ Chrome normally keeps an unpacked extension after restart. It may stop loading i
 
 ### Microsoft Edge
 
-1. Download and extract `ultrax-rtl-edge-v2.8.0.zip`.
+1. Download and extract `ultrax-rtl-edge-v2.8.1.zip`.
 2. Open `edge://extensions`.
 3. Enable **Developer mode**.
 4. Select **Load unpacked**.
@@ -177,7 +179,7 @@ Chrome normally keeps an unpacked extension after restart. It may stop loading i
 
 For temporary testing:
 
-1. Download and extract `ultrax-rtl-firefox-v2.8.0.zip`.
+1. Download and extract `ultrax-rtl-firefox-v2.8.1.zip`.
 2. Open `about:debugging#/runtime/this-firefox`.
 3. Select **Load Temporary Add-on**.
 4. Choose `manifest.json` from the extracted folder.
@@ -217,6 +219,8 @@ The default configuration is intended to be safe for ordinary Persian content. C
 | Normalize digits | Converts Arabic-Indic digits on RTL text | Off |
 | Flip directional icons | Mirrors likely directional controls | Off |
 | Aggressive mode | Broadens RTL targeting on difficult layouts | Off |
+
+When **Always apply on this site** is selected for the first time, approve the browser's origin-specific access prompt. Existing 2.8.0 Always rules should be selected once again after updating so they receive the restart-safe permission.
 
 ## Scanner reports
 

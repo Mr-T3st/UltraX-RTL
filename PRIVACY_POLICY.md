@@ -17,8 +17,9 @@ Scanner reports are created in memory and downloaded only when the user selects 
 - `activeTab` grants temporary access after a direct user action.
 - `scripting` loads the local RTL engine and stylesheet into the authorized tab.
 - `storage` keeps user preferences and local extension state.
+- Optional per-origin access is requested only when the user selects **Always apply on this site**. It lets that specific site rule run again after a browser restart and is removed when the rule is cleared or changed to **Never**.
 
-UltraX-RTL does not request a permanent host permission and does not load remote executable code.
+UltraX-RTL does not receive broad host access by default and does not load remote executable code.
 
 ## Retention and deletion
 
