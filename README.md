@@ -18,7 +18,7 @@
 </p>
 
   <p>
-    <img alt="Version 2.8.2" src="https://img.shields.io/badge/version-2.8.2-5B7CFA?style=flat-square">
+    <img alt="Version 2.8.3" src="https://img.shields.io/badge/version-2.8.3-5B7CFA?style=flat-square">
     <img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-7B61FF?style=flat-square">
     <img alt="Chrome, Edge and Firefox" src="https://img.shields.io/badge/browsers-Chrome%20%7C%20Edge%20%7C%20Firefox-20BFA9?style=flat-square">
     <img alt="Local processing" src="https://img.shields.io/badge/privacy-local--only-2EBD85?style=flat-square">
@@ -64,7 +64,8 @@ These examples show the extension interface, Persian text correction, protected 
 - Handles mixed Unicode text and English paragraphs more naturally.
 - Supports sentences that begin with an English product name or technical phrase.
 - Processes content added later by single-page applications and streaming AI responses.
-- Keeps ChatGPT's application shell in its native direction while applying RTL only to matching conversation content.
+- Keeps modern AI application shells—including ChatGPT, Claude, Gemini, Copilot, Perplexity, and Grok—in their native direction while applying RTL only to matching conversation content.
+- Isolates a leading English product name or technical phrase inside an RTL response so punctuation and the Persian continuation retain their intended order.
 - Restores extension-owned changes through Reset.
 
 ### AI sidebar preservation (It does not work on all websites)
@@ -148,16 +149,16 @@ Open the [latest GitHub Release](https://github.com/Mr-T3st/UltraX-RTL/releases/
 
 | Browser | Release asset | Intended use |
 |---|---|---|
-| Google Chrome | `ultrax-rtl-chrome-v2.8.2.zip` | Local unpacked installation or Chrome Web Store submission |
-| Microsoft Edge | `ultrax-rtl-edge-v2.8.2.zip` | Local unpacked installation or Edge Add-ons submission |
-| Mozilla Firefox | `ultrax-rtl-firefox-v2.8.2.zip` | Temporary testing or Mozilla Add-ons submission |
+| Google Chrome | `ultrax-rtl-chrome-v2.8.3.zip` | Local unpacked installation or Chrome Web Store submission |
+| Microsoft Edge | `ultrax-rtl-edge-v2.8.3.zip` | Local unpacked installation or Edge Add-ons submission |
+| Mozilla Firefox | `ultrax-rtl-firefox-v2.8.3.zip` | Temporary testing or Mozilla Add-ons submission |
 | All packages | `SHA256SUMS.txt` | Download-integrity verification |
 
 ## Installation
 
 ### Google Chrome
 
-1. Download `ultrax-rtl-chrome-v2.8.2.zip` from Releases.
+1. Download `ultrax-rtl-chrome-v2.8.3.zip` from Releases.
 2. Extract it to a permanent folder.
 3. Open `chrome://extensions`.
 4. Enable **Developer mode**.
@@ -169,7 +170,7 @@ Chrome normally keeps an unpacked extension after restart. It may stop loading i
 
 ### Microsoft Edge
 
-1. Download and extract `ultrax-rtl-edge-v2.8.2.zip`.
+1. Download and extract `ultrax-rtl-edge-v2.8.3.zip`.
 2. Open `edge://extensions`.
 3. Enable **Developer mode**.
 4. Select **Load unpacked**.
@@ -180,7 +181,7 @@ Chrome normally keeps an unpacked extension after restart. It may stop loading i
 
 For temporary testing:
 
-1. Download and extract `ultrax-rtl-firefox-v2.8.2.zip`.
+1. Download and extract `ultrax-rtl-firefox-v2.8.3.zip`.
 2. Open `about:debugging#/runtime/this-firefox`.
 3. Select **Load Temporary Add-on**.
 4. Choose `manifest.json` from the extracted folder.
